@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="colorPrimary">#C77DFF</color> <!-- Softer Purple -->
+    <color name="colorPrimaryVariant">#9D4EDD</color>
+    <color name="colorSecondary">#E0AAFF</color>
+    <color name="colorAccent">#D8B4FE</color>
+
+    <!--Logo BG-->
+    <color name="logo_bg">#0B101E</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#121212</color> <!-- True Dark Background -->
+    <color name="colorSurface">#1E1E1E</color> <!-- Dark Surface -->
+
+    <!-- Text Colors -->
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#545454</color>
+
+    <!-- Status Colors (Fixed) -->
+    <color name="colorError">#EF5350</color> <!-- Lighter Red -->
+    <color name="colorSuccess">#66BB6A</color> <!-- Lighter Green -->
+    <color name="colorWarning">#FFB300</color> <!-- Bright Amber -->
+    <color name="colorInfo">#42A5F5</color> <!-- Bright Blue -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="fixed_text_dark">#222222</color>
+    <color name="fixed_text_light">#ffffff</color>
+    <color name="purple">#C77DFF</color>
+
+    <!-- Neutral / Additional -->
+    <color name="colorDivider">#373737</color> <!-- Divider lines -->
+    <color name="colorDisabled">#616161</color> <!-- Disabled text/buttons -->
+    <color name="colorHint">#B0BEC5</color> <!-- Hint text -->
+
+</resources>

@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Vibora" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Background & Surface -->
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+
+        <!-- Text -->
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="android:textColorSecondary">@color/colorOnSecondary</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+
+        <!-- Button Styles -->
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+
+        <!-- Prevent layout from drawing behind status bar -->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- Text Input Style -->
+    <style name="TextInputStyle">
+        <item name="colorControlNormal">@color/colorHint</item>
+    </style>
+</resources>

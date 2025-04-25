@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Vibora</string>
+
+    <string name="manrope_bold">manrope_bold.ttf</string>
+    <string name="manrope_extrabold">manrope_extrabold.ttf</string>
+    <string name="manrope_light">manrope_light.ttf</string>
+    <string name="manrope_extralight">manrope_extralight.ttf</string>
+    <string name="manrope_medium">manrope_medium.ttf</string>
+    <string name="manrope_regular">manrope_regular.ttf</string>
+    <string name="manrope_semibold">manrope_semibold.ttf</string>
+    <string name="vibora_bold">VIBORA</string>
+    <string name="welcome_buddies">Welcome\'s you</string>
+    <string name="login_desc">Chat beyond borders. Surf the global wave, meet new vibes, and discover gold in every conversation. Only on <font color="#C77DFF"><b>Vibora.</b></font></string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email_id">Email id</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="sign_up"><u><font color="#222222">Sign Up</font></u></string>
+
+</resources>

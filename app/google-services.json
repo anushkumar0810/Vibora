@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74563729619",
+    "project_id": "vibora-a7bae",
+    "storage_bucket": "vibora-a7bae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74563729619:android:fcf2fcf248c404a1d6fc26",
+        "android_client_info": {
+          "package_name": "com.anush.vibora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtq_9_oBYc0bBGw8hrsTUhcA7wRzoMS9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
