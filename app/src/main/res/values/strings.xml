@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Vibora</string>
 
+    <string name="default_client_id">74563729619-apk7h8qn8lqpl4v9crdhf52ni4b023cn.apps.googleusercontent.com</string>
+
     <string name="manrope_bold">manrope_bold.ttf</string>
     <string name="manrope_extrabold">manrope_extrabold.ttf</string>
     <string name="manrope_light">manrope_light.ttf</string>
@@ -16,6 +18,15 @@
     <string name="password">Password</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="login">Login</string>
-    <string name="sign_up"><u><font color="#222222">Sign Up</font></u></string>
+    <string name="or">or</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account <font color="#C77DFF"><b>Sign Up</b></font></string>
+    <string name="already_have_account_login">Already have account <font color="#C77DFF"><b>Login</b></font></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="choose_country">Choose a country</string>
+    <string name="don_t_have_an_account">"Don't have an account "</string>
+    <string name="already_have_account">"Already have account "</string>
 
 </resources>

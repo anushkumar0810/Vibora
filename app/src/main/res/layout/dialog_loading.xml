@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="24dp"
+    android:gravity="center_vertical">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        app:indicatorName="LineScaleIndicator"
+        app:indicatorColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/loadingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/fixed_text_dark"
+        android:textAppearance="?attr/textAppearanceBody1" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="16dp">
+
+    <!-- Skip to Mainactivity -->
+    <ImageView
+        android:id="@+id/skipBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/close"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"/>
+
+    <!-- ImageView for displaying the selected image -->
+    <com.anush.vibora.CustomClasses.RoundedImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/skipBtn"
+        app:round_background="true"
+        android:src="@drawable/ic_profile"
+        app:corner_radius="250dp"/>
+
+
+    <TextView
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/all_btn_bg"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:text="Upload Image" />
+
+
+</RelativeLayout>

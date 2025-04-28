@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/popup_corners">
+
+    <com.anush.vibora.CustomClasses.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/choose_country"
+        android:textColor="@color/fixed_text_dark"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16sp"
+        app:typeface="manrope_medium.ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16sp"
+        android:background="@color/colorDivider"/>
+
+    <ProgressBar
+        android:id="@+id/countryProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countryRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@color/white"
+        android:layout_marginBottom="16sp"
+        android:scrollbars="vertical"
+        android:scrollbarSize="3dp"/>
+</LinearLayout>

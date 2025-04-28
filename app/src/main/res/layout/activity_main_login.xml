@@ -42,56 +42,63 @@
         app:layout_constraintTop_toBottomOf="@+id/header_title"
         tools:targetApi="31">
 
-        <androidx.core.widget.NestedScrollView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white">
+            android:padding="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp"
+                android:layout_height="0dp"
                 android:background="@color/white"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/switchLays"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.anush.vibora.CustomClasses.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/welcome_buddies"
-                    android:textSize="24sp"
                     android:background="@color/white"
+                    android:text="@string/welcome_buddies"
                     android:textColor="@color/purple"
-                    app:typeface="manrope_bold.ttf"/>
+                    android:textSize="24sp"
+                    app:typeface="manrope_bold.ttf" />
 
                 <com.anush.vibora.CustomClasses.CustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
                     android:text="@string/login_desc"
                     android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:background="@color/white"
-                    android:layout_marginTop="15dp"
                     android:textColor="@color/fixed_text_dark"
-                    app:typeface="manrope_regular.ttf"/>
+                    android:textSize="16sp"
+                    app:typeface="manrope_regular.ttf" />
 
                 <LinearLayout
                     android:id="@+id/loginLay"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="358dp"
                     android:layout_marginTop="20dp"
                     android:background="@color/white"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="visible">
 
                     <com.anush.vibora.CustomClasses.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/email_id"
-                        android:textSize="16sp"
                         android:background="@color/white"
+                        android:text="@string/email_id"
                         android:textColor="@color/fixed_text_dark"
-                        app:typeface="manrope_semibold.ttf"/>
+                        android:textSize="16sp"
+                        app:typeface="manrope_semibold.ttf" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -105,9 +112,9 @@
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
-                            android:padding="10dp"
-                            android:background="@color/white"
                             android:layout_marginStart="5dp"
+                            android:background="@color/white"
+                            android:padding="11dp"
                             android:src="@drawable/mail" />
 
                         <com.anush.vibora.CustomClasses.CustomEditText
@@ -118,24 +125,25 @@
                             android:layout_centerVertical="true"
                             android:layout_toEndOf="@+id/imageView"
                             android:background="@null"
-                            android:singleLine="true"
-                            android:textSize="14sp"
-                            android:textColor="@color/primary_text"
+                            android:backgroundTint="@color/white"
                             android:hint="@string/enter_your_email"
-                            android:textColorHint="@color/colorHint"
-                            android:backgroundTint="@color/white"/>
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="@color/fixed_text_dark"
+                            android:textColorHint="@color/secondary_text"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
                     <com.anush.vibora.CustomClasses.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/password"
-                        android:textSize="16sp"
                         android:layout_marginTop="15dp"
                         android:background="@color/white"
+                        android:text="@string/password"
                         android:textColor="@color/fixed_text_dark"
-                        app:typeface="manrope_semibold.ttf"/>
+                        android:textSize="16sp"
+                        app:typeface="manrope_semibold.ttf" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -149,10 +157,10 @@
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
-                            android:padding="10dp"
-                            android:background="@color/white"
                             android:layout_marginStart="5dp"
-                            android:src="@drawable/eye" />
+                            android:background="@color/white"
+                            android:padding="11dp"
+                            android:src="@drawable/eye_closed" />
 
                         <com.anush.vibora.CustomClasses.CustomEditText
                             android:id="@+id/loginPassEdt"
@@ -162,12 +170,13 @@
                             android:layout_centerVertical="true"
                             android:layout_toEndOf="@+id/togglePass"
                             android:background="@null"
-                            android:singleLine="true"
-                            android:textSize="14sp"
-                            android:textColor="@color/primary_text"
+                            android:backgroundTint="@color/white"
                             android:hint="@string/enter_your_password"
-                            android:textColorHint="@color/colorHint"
-                            android:backgroundTint="@color/white"/>
+                            android:singleLine="true"
+                            android:inputType="textPassword"
+                            android:textColor="@color/fixed_text_dark"
+                            android:textColorHint="@color/secondary_text"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
@@ -175,24 +184,315 @@
                         android:id="@+id/loginBtn"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="@string/login"
-                        android:gravity="center"
-                        android:layout_marginTop="15dp"
-                        android:textColor="@color/white"
+                        android:layout_marginTop="35dp"
                         android:background="@drawable/login_btn_bg"
-                        app:layout_constraintTop_toBottomOf="@+id/mailLay"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:typeface="manrope_semibold.ttf"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mailLay"
+                        app:typeface="manrope_semibold.ttf" />
+
+                    <com.anush.vibora.CustomClasses.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:text="@string/or"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorHint"
+                        android:textSize="14sp"
+                        app:typeface="manrope_regular.ttf" />
+
+                    <ImageView
+                        android:id="@+id/googleLogin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:src="@drawable/google" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signupLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <com.anush.vibora.CustomClasses.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:text="Name"
+                                android:textColor="@color/fixed_text_dark"
+                                android:textSize="16sp"
+                                app:typeface="manrope_semibold.ttf" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/login_edt_bg">
+
+                                <ImageView
+                                    android:id="@+id/nameImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@color/white"
+                                    android:padding="11dp"
+                                    android:src="@drawable/user" />
+
+                                <com.anush.vibora.CustomClasses.CustomEditText
+                                    android:id="@+id/nameSignUpEdt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/nameImage"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/white"
+                                    android:hint="@string/enter_your_name"
+                                    android:singleLine="true"
+                                    android:inputType="textCapWords"
+                                    android:textColor="@color/fixed_text_dark"
+                                    android:textColorHint="@color/secondary_text"
+                                    android:textSize="14sp"
+                                    app:typeface="manrope_regular.ttf" />
+
+                            </RelativeLayout>
+
+                            <com.anush.vibora.CustomClasses.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/email_id"
+                                android:textColor="@color/fixed_text_dark"
+                                android:textSize="16sp"
+                                app:typeface="manrope_semibold.ttf" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/login_edt_bg">
+
+                                <ImageView
+                                    android:id="@+id/mailImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@color/white"
+                                    android:padding="11dp"
+                                    android:src="@drawable/mail" />
+
+                                <com.anush.vibora.CustomClasses.CustomEditText
+                                    android:id="@+id/signUpEmailEdt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/mailImage"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/white"
+                                    android:hint="@string/enter_your_email"
+                                    android:singleLine="true"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/fixed_text_dark"
+                                    android:textColorHint="@color/secondary_text"
+                                    android:textSize="14sp"
+                                    app:typeface="manrope_regular.ttf" />
+
+                            </RelativeLayout>
+
+                            <com.anush.vibora.CustomClasses.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/white"
+                                android:text="@string/phone_number"
+                                android:textColor="@color/fixed_text_dark"
+                                android:textSize="16sp"
+                                app:typeface="manrope_semibold.ttf" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/login_edt_bg">
+
+                                <ImageView
+                                    android:id="@+id/phoneImg"
+                                    android:layout_width="18dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@color/white"
+                                    android:src="@drawable/phone_call" />
+
+                                <com.anush.vibora.CustomClasses.CustomTextView
+                                    android:id="@+id/chooseCountryCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="+91"
+                                    android:layout_margin="5dp"
+                                    android:paddingStart="5dp"
+                                    android:layout_centerVertical="true"
+                                    android:paddingEnd="5dp"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:layout_toEndOf="@+id/phoneImg"
+                                    android:textColor="@color/fixed_text_dark"
+                                    app:typeface="manrope_regular.ttf" />
+
+                                <com.anush.vibora.CustomClasses.CustomEditText
+                                    android:id="@+id/signUpNumEdt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/chooseCountryCode"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/white"
+                                    android:hint="@string/enter_your_mobile_number"
+                                    android:singleLine="true"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/fixed_text_dark"
+                                    android:textColorHint="@color/secondary_text"
+                                    android:textSize="14sp"
+                                    app:typeface="manrope_regular.ttf" />
+
+                            </RelativeLayout>
+
+                            <com.anush.vibora.CustomClasses.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/white"
+                                android:text="@string/password"
+                                android:textColor="@color/fixed_text_dark"
+                                android:textSize="16sp"
+                                app:typeface="manrope_semibold.ttf" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/login_edt_bg">
+
+                                <ImageView
+                                    android:id="@+id/signUptogglePass"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@color/white"
+                                    android:padding="11dp"
+                                    android:src="@drawable/eye_closed" />
+
+                                <com.anush.vibora.CustomClasses.CustomEditText
+                                    android:id="@+id/signUpPassEdt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/signUptogglePass"
+                                    android:background="@null"
+                                    android:backgroundTint="@color/white"
+                                    android:hint="@string/enter_your_password"
+                                    android:singleLine="true"
+                                    android:inputType="textPassword"
+                                    android:textColor="@color/fixed_text_dark"
+                                    android:textColorHint="@color/secondary_text"
+                                    android:textSize="14sp"
+                                    app:typeface="manrope_regular.ttf" />
+
+                            </RelativeLayout>
+
+                            <com.anush.vibora.CustomClasses.CustomTextView
+                                android:id="@+id/signUpBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="35dp"
+                                android:background="@drawable/login_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/sign_up"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/mailLay"
+                                app:typeface="manrope_semibold.ttf" />
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-        </androidx.core.widget.NestedScrollView>
+            <com.anush.vibora.CustomClasses.CustomTextView
+                android:id="@+id/switchLays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:text="@string/don_t_have_an_account_sign_up"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:typeface="manrope_regular.ttf" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:progressTint="@color/purple"/>
 
     </LinearLayout>
 

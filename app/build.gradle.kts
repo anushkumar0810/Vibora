@@ -58,4 +58,41 @@ dependencies {
     implementation(libs.firebase.messaging)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.appcheck.playintegrity)
+    implementation(libs.firebase.appcheck.debug)
+
+    /** Volley Dependency*/
+    implementation(libs.volley)
+
+    /** Gson*/
+    implementation(libs.gson)
+    implementation (libs.com.auth0.java.jwt)
+    implementation (libs.integrity)
+    implementation (libs.google.firebase.appcheck.debug)
+
+    /** Google login*/
+    implementation(libs.play.services.auth)
+
+    /** Http3*/
+    implementation(libs.okhttp)
+
+    /** MVVM Architecture*/
+    // ViewModel and LiveData dependencies
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)    // ViewModel
+    implementation (libs.androidx.lifecycle.livedata.ktx)     // LiveData
+    implementation (libs.androidx.lifecycle.runtime.ktx)      // Lifecycle
+
+    /** Coroutine dependencies for ViewModel */
+    implementation (libs.kotlinx.coroutines.android) // Coroutine support
+
+    /** AV Loading indicator*/
+    implementation(libs.avloadingindicatorview)
+
+    configurations.all {
+        resolutionStrategy {
+            force("org.apache.httpcomponents.client5:httpclient5:5.2")
+        }
+    }
+
 }
